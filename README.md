@@ -14,4 +14,11 @@ __Build:__
 
 __Test RUN:__ 
 
-```docker run -it --rm -p 8081:5000 --name pythonwebapp -v ${PWD}:/opt/data/app temp/python-instant-client12c bash```
+- Windows PowerShell
+    - ```docker run -it --rm -p 8081:5000 --name pyapp -v ${PWD}:/opt/data/app temp/python-instant-client12c bash```
+
+- Windows cmd
+    - ```docker run -it --rm -p 8081:5000 --name pyapp -v %cd%:/opt/data/app temp/python-instant-client12c bash```
+
+- ###Linux 
+    - ```docker run -it --rm -p 8081:5000 --name pyapp -v $(PWD):/opt/data/app temp/python-instant-client12c bash```
