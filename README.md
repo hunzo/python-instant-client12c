@@ -10,4 +10,11 @@ instantclient-sqlplus-linux.x64-12.2.0.1.0.zip
 
 copy to ./oracle-instantclient
 
+Build:
 
+docker build -t temp/python-instant-client12c .
+
+
+Test RUN: 
+
+docker run -it --rm -p 8081:5000 --name web -v ${PWD}:/opt/data/app temp/python-instant-client12c bash
