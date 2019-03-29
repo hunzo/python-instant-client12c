@@ -1,0 +1,5 @@
+cx_Oracle
+flask
+pylint
+request
+requests
