@@ -21,4 +21,4 @@ __Test RUN:__
     - ```docker run -it --rm -p 8081:5000 --name pyapp -v %cd%:/opt/data/app temp/python-instant-client12c bash```
 
 - ###Linux 
-    - ```docker run -it --rm -p 8081:5000 --name pyapp -v $(PWD):/opt/data/app temp/python-instant-client12c bash```
+    - ```docker run -it --rm -p 8081:5000 --name pyapp -v $(pwd):/opt/data/app temp/python-instant-client12c bash```
